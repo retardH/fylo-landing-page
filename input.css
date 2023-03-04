@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/*
+
+        font-family: 'Open Sans', sans-serif;
+
+        font-family: 'Raleway', sans-serif;
+
+*/
+
+body {
+    background-color: black;
+}
+
+/* .testimonials-box:first-child:before { */
+    /* content: url(./images/bg-quotes.png); */
+    /* content: "EEEE"; */
+    /* position: absolute; */
+    /* z-index: 100; */
+/* } */
+
+
+/* intro section shape background */
+
+#intro {
+    background-image: url(../images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    background-color: hsl(217, 28%, 15%);
+}
+
+
+/* quote.png styling */
+.first-testimonial::before {
+    content: url("../images/bg-quotes.png");
+    color: white;
+    position: absolute;
+    z-index: -1;
+    top: -18%;
+    left: -1%;
+    
+}
